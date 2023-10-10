@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom, #FF0000, #0000FF);
+            background-size: 100% 200%;
+            animation: gradientAnimation 10s infinite alternate;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        
+        h1 {
+            color: #fff;
+        }
+        
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 100%;
+            }
+            100% {
+                background-position: 0% 0%;
+            }
+        }
+        
+        .button {
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .social-button {
+            font-size: 20px;
+            margin: 10px;
+        }
+        
+        .about-me-tab {
+            display: none;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Admin Panel</h1>
+    <button class="button" onclick="window.location.href='https://eps.ps.fhgdps.com/tools/cron/cron.php'">Cron</button>
+    <button class="button" onclick="window.location.href='https://eps.ps.fhgdps.com/tools/tools/'">General Tools</button>
+    <button class="button" onclick="window.location.href='https://eps.ps.fhgdps.com/dashboard/'">(Beta) Dashboard</button>
+    <button class="button" onclick="window.location.href='https://example.com/page4'">Button 4</button>
+    <button class="button" onclick="window.location.href='https://example.com/page5'">Button 5</button>
+    
+    <div class="social-button">Twitter</div>
+    <div class="social-button">Facebook</div>
+    <div class="social-button">Instagram</div>
+    
+    <div class="about-me-tab">
+        <h2>About Me</h2>
+        <p>Insert your about me content here.</p>
+    </div>
+    
+    <script>
+        document.getElementsByClassName('social-button')[0].addEventListener('click', function() {
+            window.open('https://twitter.com/DonutKingMC);
+        });
+        
+        document.getElementsByClassName('social-button')[1].addEventListener('click', function() {
+            window.open('https://facebook.com/yourFacebookPage');
+        });
+        
+        document.getElementsByClassName('social-button')[2].addEventListener('click', function() {
+            window.open('https://instagram.com/yourInstagramPage');
+        });
+    </script>
+</body>
+</html>
